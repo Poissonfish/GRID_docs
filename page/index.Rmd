@@ -1,0 +1,60 @@
+---
+title: "GRID: Greenfield Image Decoder"
+author: "Chunpeng James Chen"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook
+documentclass: book
+url: 'https://github.com/poissonfish/photo_grid'
+github-repo: poissonfish/photo_grid
+description: "A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping"
+link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
+fontsize: 12pt
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.7"
+cover-image: md/icon.png
+---
+# Why GRID? {-}
+Greenfield imagery decoder (GRID) is a tool allowing you to trace individual crop's imagery features from a remote sensing image. Performing plot segmentation could be a painful job without a proper tool. GRID comes with several essential imaging processing techniques such as  K-means clustering and convolutional operation, accelerating the segmentation process and improving the precision of estimated imagery features.
+
+<p align="center"><p align="center"><img src = "res/iii-noise2.gif" width = 1200></p>
+
+
+## Get Started
+
+The following installations are required to use GRID:
+
+- [Python 3](https://www.python.org/downloads/): **Version 3** or later.
+
+- [pip](https://pip.pypa.io/en/stable/): The Python package installer
+
+- [photo-grid](https://pypi.org/project/photo-grid/): The Python package GRID can be found on [PyPI](https://pypi.org/project/photo-grid/)  
+
+
+Launch GRID in Python 3:
+```
+import photo_grid
+photo_grid.run()
+```
+
+## Overview of GRID
+Here you can find the general usage of GRID in 5 steps.
+
+ **Load data**
+<p align="center"><p align="center"><img src = "res/step1.png" width = 700></p>
+
+**Crop your image**
+<p align="center"><p align="center"><img src = "res/step2.gif" width = 700></p>
+
+**Plots extraction**
+<p align="center"><p align="center"><img src = "res/step3.gif" width = 700></p>
+
+**Set Up Central Points**
+<p align="center"><p align="center"><img src = "res/step4.gif" width = 700></p>
+
+**Finalize plot's boundaries**
+<p align="center"><p align="center"><img src = "res/step5.gif" width = 700></p>

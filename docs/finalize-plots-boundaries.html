@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>1.5 Finalize plot’s boundaries | GRID: Greenfield Image Decoder</title>
+  <meta name="description" content="A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="1.5 Finalize plot’s boundaries | GRID: Greenfield Image Decoder />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/poissonfish/photo_grid" />
+  <meta property="og:image" content="https://github.com/poissonfish/photo_gridmd/icon.png" />
+  <meta property="og:description" content="A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping" />
+  <meta name="github-repo" content="poissonfish/photo_grid" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1.5 Finalize plot’s boundaries | GRID: Greenfield Image Decoder />
+  
+  <meta name="twitter:description" content="A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping" />
+  <meta name="twitter:image" content="https://github.com/poissonfish/photo_gridmd/icon.png" />
+
+<meta name="author" content="Chunpeng James Chen">
+
+
+<meta name="date" content="2019-08-03">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="set-up-central-points.html">
+<link rel="next" href="gallery.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./index.html">User Manuel for GRID</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Why GRID?</a><ul>
+<li class="chapter" data-level="0.1" data-path="get-started.html"><a href="get-started.html"><i class="fa fa-check"></i><b>0.1</b> Get Started</a></li>
+<li class="chapter" data-level="0.2" data-path="overview-of-grid.html"><a href="overview-of-grid.html"><i class="fa fa-check"></i><b>0.2</b> Overview of GRID</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="interface-and-usage.html"><a href="interface-and-usage.html"><i class="fa fa-check"></i><b>1</b> Interface and Usage</a><ul>
+<li class="chapter" data-level="1.1" data-path="load-data.html"><a href="load-data.html"><i class="fa fa-check"></i><b>1.1</b> Load data</a></li>
+<li class="chapter" data-level="1.2" data-path="crop-images.html"><a href="crop-images.html"><i class="fa fa-check"></i><b>1.2</b> Crop Images</a></li>
+<li class="chapter" data-level="1.3" data-path="plots-extraction.html"><a href="plots-extraction.html"><i class="fa fa-check"></i><b>1.3</b> Plots Extraction</a></li>
+<li class="chapter" data-level="1.4" data-path="set-up-central-points.html"><a href="set-up-central-points.html"><i class="fa fa-check"></i><b>1.4</b> Set Up Central Points</a></li>
+<li class="chapter" data-level="1.5" data-path="finalize-plots-boundaries.html"><a href="finalize-plots-boundaries.html"><i class="fa fa-check"></i><b>1.5</b> Finalize plot’s boundaries</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="gallery.html"><a href="gallery.html"><i class="fa fa-check"></i><b>2</b> Gallery</a></li>
+<li class="divider"></li>
+<li><a href="https://academic.oup.com/bioinformatics/article/34/11/1925/4802224" target="_blank">Article on Bioinformatics</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GRID: Greenfield Image Decoder</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="finalize-plots-boundaries" class="section level2">
+<h2><span class="header-section-number">1.5</span> Finalize plot’s boundaries</h2>
+<p align="center">
+<p align="center">
+<img src = "res/step5.gif" width = 700>
+</p>
+<p>GRID will detect the border automatically for each plot. Users in this panel can finalize the borders and export the results.</p>
+<p align="center">
+<p align="center">
+<img src = "res/v-seg.png" width = 700>
+</p>
+<ul>
+<li><p>Border detection (auto): Grid coefficient is a way to tune the weights between two strategies: With a smaller coefficient, GRID will tend to explore the adjacent pixels from the center and expand the border as much as possible. Whereas with a larger coefficient, GRID will consider how far the expanded border from the central point. The further the distance is, the less chance GRID will continue to explore the adjacent area.</p></li>
+<li><p>Border detection (manual): Instead of detecting borders automatically, the size of borders can also be adjusted into a fixed size. It assumes that every plots are in the same size</p></li>
+</ul>
+<p align="center">
+<p align="center">
+<img src = "res/v-align.png" width = 400>
+</p>
+<ul>
+<li>Alignment: Rows and columns of plots can be aligned vertically or horizontally. It’s like the way how you arrange objects in Microsofts Word or PowerPoints. GRID also allows users to allocate the plots in the equal distance.</li>
+</ul>
+<p align="center">
+<p align="center">
+<img src = "res/v-output.png" width = 700>
+</p>
+<ul>
+<li>Output: In this section users can name the prefix for the output files.</li>
+</ul>
+<p><strong>Cursor mode</strong> (right click to switch between each mode):</p>
+<ul>
+<li><p>Border refine: In this mode, users can refine the individual’s border by left-click dragging</p></li>
+<li><p>Column-wise adjustment: An entire column can be moved horizontally through left-click dragging</p></li>
+<li><p>Row-wise adjustment: An entire rows can be moved vertically through left-click dragging</p></li>
+</ul>
+
+</div>
+<!-- </div> -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="set-up-central-points.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gallery.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf"],
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
