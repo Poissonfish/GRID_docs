@@ -21,7 +21,7 @@ cover-image: md/icon.png
 # Why GRID? {-}
 Greenfield imagery decoder (GRID) is a tool allowing you to trace individual crop's imagery features from a remote sensing image. Performing plot segmentation could be a painful job without a proper tool. GRID comes with several essential imaging processing techniques such as  K-means clustering and convolutional operation, accelerating the segmentation process and improving the precision of estimated imagery features.
 
-<p align="center"><p align="center"><img src = "res/iii-noise2.gif" width = 1200></p>
+<p align="center"><p align="center"><img src = "res/font.gif" width = 1200></p>
 
 
 ## Get Started
@@ -32,7 +32,7 @@ The following installations are required to use GRID:
 
 - [pip](https://pip.pypa.io/en/stable/): The Python package installer
 
-- [photo-grid](https://pypi.org/project/photo-grid/): The Python package GRID can be found on [PyPI](https://pypi.org/project/photo-grid/)  
+- [photo-grid](https://pypi.org/project/photo-grid/): The Python package GRID can be found on [PyPI](https://pypi.org/project/photo-grid/)
 
 
 Launch GRID in Python 3:
