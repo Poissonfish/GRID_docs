@@ -10,6 +10,7 @@ url: 'https://github.com/poissonfish/photo_grid'
 github-repo: poissonfish/photo_grid
 description: "A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping"
 link-citations: yes
+pandoc_args: --top-level-division=chapter
 colorlinks: yes
 lot: yes
 lof: yes
@@ -26,16 +27,16 @@ cover-image: md/icon.png
 
 ## Windows
 
-- It's recommanded to install GRID under [Anaconda envirnoemnt](https://www.anaconda.com/distribution/)
+- It's recommanded to install GRID under Anaconda envirnoemnt, download it [here](https://www.anaconda.com/distribution/)0
 <p align="center"><p align="center"><img src = "res/Anaconda_python3.png" width = 500></p>
 
-- Run the downloaded installer 
+- Open the downloaded installer.
 <p align="center"><p align="center"><img src = "res/Anaconda_installation.png" width = 500></p>
 
-- Open Anaconda prompt
+- Open Anaconda Prompt
 <p align="center"><p align="center"><img src = "res/Anaconda_Prompt.png" width = 500></p>
 
-- Run the following command to install Rasterio, which is required by GRID.
+- In the prompt, run the following command to install Rasterio, which is required by GRID.
 ```
 conda config --add channels conda-forge
 conda install rasterio
@@ -46,7 +47,7 @@ conda install rasterio
 pip install photo_grid
 ```
 
-- To launch GRID, type following scripts in Anaconda prompt:
+- Run GRID in Anaconda Prompt:
 ```
 python -m grid
 ```
@@ -60,7 +61,7 @@ python -m grid
 pip install photo_grid
 ```
 
-- To launch GRID, type following scripts in Terminal:
+- Run GRID in Terminal:
 ```
 python -m grid
 ```
