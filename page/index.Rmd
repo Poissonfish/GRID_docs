@@ -10,7 +10,7 @@ url: 'https://github.com/poissonfish/photo_grid'
 github-repo: poissonfish/photo_grid
 description: "A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping"
 link-citations: yes
-pandoc_args: --top-level-division=chapter
+pandoc_args: --top-level-division=heading
 colorlinks: yes
 lot: yes
 lof: yes
