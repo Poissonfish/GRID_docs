@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>3.3 Plots Extraction | GRID: Greenfield Image Decoder</title>
+  <title>1.1 Windows | GRID: Greenfield Image Decoder</title>
   <meta name="description" content="A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="3.3 Plots Extraction | GRID: Greenfield Image Decoder />
+  <meta property="og:title" content="1.1 Windows | GRID: Greenfield Image Decoder />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://github.com/poissonfish/photo_grid" />
   <meta property="og:image" content="https://github.com/poissonfish/photo_gridmd/icon.png" />
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="poissonfish/photo_grid" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.3 Plots Extraction | GRID: Greenfield Image Decoder />
+  <meta name="twitter:title" content="1.1 Windows | GRID: Greenfield Image Decoder />
   
   <meta name="twitter:description" content="A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping" />
   <meta name="twitter:image" content="https://github.com/poissonfish/photo_gridmd/icon.png" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="crop-images.html">
-<link rel="next" href="set-up-central-points.html">
+<link rel="prev" href="index.html">
+<link rel="next" href="os-x.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -97,72 +97,42 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="plots-extraction" class="section level2">
-<h2><span class="header-section-number">3.3</span> Plots Extraction</h2>
+<div id="windows" class="section level2">
+<h2><span class="header-section-number">1.1</span> Windows</h2>
+It’s recommanded to install GRID under <a href="https://www.anaconda.com/distribution/">Anaconda envirnoemnt</a>
 <p align="center">
 <p align="center">
-<img src = "res/step3.gif" width = 700>
+<img src = "res/Anaconda_python3.png" width = 800>
 </p>
-<ul>
-<li>This is a panel to define vegetation plots (i.e., area of interest, AOI). The yellow area is the one that will be selected, whereas pixels colored as black will be excluded from the following calculation.</li>
-</ul>
+Run the downloaded installer
 <p align="center">
 <p align="center">
-<img src = "res/iii-kmean.png" width = 700>
+<img src = "res/Anaconda_installation.png" width = 800>
 </p>
-<ul>
-<li><p>GRID will run a K-mean clustering algorithm to extract the vegetation areas.</p></li>
-<li><p>Only bands of red and near-infrared red (NIR) will be used in K-mean clustering.</p></li>
-<li><p>Selected K will tell GRID that how many clusters are expected in the image.</p></li>
-</ul>
+Open Anaconda prompt
 <p align="center">
 <p align="center">
-<img src = "res/iii-bin.png" width = 700>
+<img src = "res/Anaconda_Prompt.png" width = 800>
 </p>
-<ul>
-<li>To assign which clusters as AOI, users can either let the program decide automatically or select them manually.</li>
-</ul>
-<p align="center">
-<p align="center">
-<img src = "res/iii-refine.png" width = 700>
-</p>
-<ul>
-<li>De-shadow: This feature allows users to remove any pixel that is darker than the certain level.</li>
-</ul>
-<p align="center">
-<p align="center">
-<img src = "res/iii-shadow.png" width = 700>
-</p>
-<ul>
-<li>De-noise: This is a feature to remove noise signals existing in the background or canopy.</li>
-</ul>
-<p align="center">
-<p align="center">
-<img src = "res/iii-noise.png" width = 700>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/iii-noise2.png" width = 700>
-</p>
-<ul>
-<li>Display mode: Users may verify the results by switching different view modes. “RGB” shows the original image; “Binary” is a mode showing the selected area (yellow) and the excluded part (black); And “K mean” can show the clustering results by different colors.</li>
-</ul>
-<p align="center">
-<p align="center">
-<img src = "res/iii-dis.png" width = 400>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/iii-dis2.png" width = 700>
-</p>
+<p>Run the following command to install Rasterio, which is required by GRID.
+’’’
+conda config –add channels conda-forge
+conda install rasterio
+’’’</p>
+<p>Use <a href="https://pip.pypa.io/en/stable/">pip</a> to install GRID
+’’’
+pip install photo_grid
+’’’</p>
+<p>To launch GRID, type following scripts in Anaconda prompt:</p>
+<pre><code>python -m grid</code></pre>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="crop-images.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="set-up-central-points.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="os-x.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

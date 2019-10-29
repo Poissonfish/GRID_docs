@@ -19,9 +19,10 @@ monofontoptions: "Scale=0.7"
 cover-image: md/icon.png
 ---
 
-<p align="center"><p align="center"><img src = "res/home.png" width = 1200></p>
 
 # Installation
+
+<p align="center"><p align="center"><img src = "res/home.png" width = 1200></p>
 
 ## Windows
 
