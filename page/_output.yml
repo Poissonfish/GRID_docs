@@ -6,15 +6,15 @@ bookdown::gitbook:
     toc:
       collapse: none
       before: |
-        <li><a href="./index.html">User Manuel for GRID</a></li>
-      after: |
-        <li><a href="https://academic.oup.com/bioinformatics/article/34/11/1925/4802224" target="_blank">Article on Bioinformatics</a></li>
+        <li><a href="./index.html">User Manual for GRID</a></li>
+      # after: |
+        # <li><a href="https://academic.oup.com/bioinformatics/article/34/11/1925/4802224" target="_blank">Article on Bioinformatics</a></li>
     download: [pdf]
     sharing:
       github: yes
-      facebook: no
-bookdown::html_chapters:
-  css: [css/style.css, css/toc.css]
+      facebook: yes
+# bookdown::html_chapters:
+#   css: [css/style.css, css/toc.css]
 bookdown::pdf_book:
   includes:
     in_header: latex/preamble.tex
