@@ -13,8 +13,8 @@ bookdown::gitbook:
     sharing:
       github: yes
       facebook: yes
-# bookdown::html_chapters:
-#   css: [css/style.css, css/toc.css]
+bookdown::html_chapters:
+  css: [css/style.css, css/toc.css]
 bookdown::pdf_book:
   includes:
     in_header: latex/preamble.tex
