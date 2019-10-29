@@ -26,41 +26,41 @@ cover-image: md/icon.png
 
 ## Windows
 
-It's recommanded to install GRID under [Anaconda envirnoemnt](https://www.anaconda.com/distribution/)
-<p align="center"><p align="center"><img src = "res/Anaconda_python3.png" width = 800></p>
+- It's recommanded to install GRID under [Anaconda envirnoemnt](https://www.anaconda.com/distribution/)
+<p align="center"><p align="center"><img src = "res/Anaconda_python3.png" width = 500></p>
 
-Run the downloaded installer 
-<p align="center"><p align="center"><img src = "res/Anaconda_installation.png" width = 800></p>
+- Run the downloaded installer 
+<p align="center"><p align="center"><img src = "res/Anaconda_installation.png" width = 500></p>
 
-Open Anaconda prompt
-<p align="center"><p align="center"><img src = "res/Anaconda_Prompt.png" width = 800></p>
+- Open Anaconda prompt
+<p align="center"><p align="center"><img src = "res/Anaconda_Prompt.png" width = 500></p>
 
-Run the following command to install Rasterio, which is required by GRID.
-'''
+- Run the following command to install Rasterio, which is required by GRID.
+```
 conda config --add channels conda-forge
 conda install rasterio
-'''
+```
 
-Use [pip](https://pip.pypa.io/en/stable/) to install GRID
-'''
+- Use [pip](https://pip.pypa.io/en/stable/) to install GRID
+```
 pip install photo_grid
-'''
+```
 
-To launch GRID, type following scripts in Anaconda prompt:
+- To launch GRID, type following scripts in Anaconda prompt:
 ```
 python -m grid
 ```
 
 ## OS X
 
-Install [Python 3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) before installing GRID
+- Install [Python 3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) before installing GRID
 
-Use [pip](https://pip.pypa.io/en/stable/) to install GRID
-'''
+- Use [pip](https://pip.pypa.io/en/stable/) to install GRID
+```
 pip install photo_grid
-'''
+```
 
-To launch GRID, type following scripts in Terminal:
+- To launch GRID, type following scripts in Terminal:
 ```
 python -m grid
 ```
