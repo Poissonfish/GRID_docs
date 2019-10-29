@@ -73,7 +73,7 @@ Users can switch the level by right-clicking on any place of the image.
 
 <p align="center"><p align="center"><img src = "res/iii-noise.png" width = 700></p>
 
-<p align="center"><p align="center"><img src = "res/iii-noise2.png" width = 700></p>
+<p align="center"><p align="center"><img src = "res/iii-noise2.gif" width = 700></p>
 
 - Display mode: Users may verify the results by switching different view modes. “RGB” shows the original image; “Binary” is a mode showing the selected area (yellow) and the excluded part (black); And “K mean”  can show the clustering results by different colors.
 
