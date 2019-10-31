@@ -20,8 +20,6 @@ monofontoptions: "Scale=0.7"
 cover-image: md/icon.png
 ---
 
-# Installation
-
 <p align="center"><p align="center"><img src = "res/GRID_logo.png" width = 200></p>
 
 ![](https://img.shields.io/pypi/pyversions/photo_grid.svg?logo=python&logoColor=white)
@@ -31,6 +29,7 @@ cover-image: md/icon.png
 ![](https://img.shields.io/github/license/poissonfish/photo_grid)
 ![](https://img.shields.io/github/languages/code-size/poissonfish/photo_grid)
 
+# Installation
 
 ## Windows
 
