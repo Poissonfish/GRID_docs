@@ -31,6 +31,10 @@ cover-image: md/icon.png
 ![](https://img.shields.io/github/license/poissonfish/photo_grid)
 ![](https://img.shields.io/github/languages/code-size/poissonfish/photo_grid)
 
+
+<p align="center"><p align="center"><img src = "res/home2.png" width = 700></p>
+
+
 # Installation
 
 ## Windows
