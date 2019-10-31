@@ -20,6 +20,8 @@ monofontoptions: "Scale=0.7"
 cover-image: md/icon.png
 ---
 
+# GRID: Greenfield Image Decoder
+
 <p align="center"><p align="center"><img src = "res/GRID_logo.png" width = 200></p>
 
 ![](https://img.shields.io/pypi/pyversions/photo_grid.svg?logo=python&logoColor=white)

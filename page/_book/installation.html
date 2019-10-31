@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapter 5 Gallery | GRID: Greenfield Image Decoder</title>
+  <title>Chapter 2 Installation | GRID: Greenfield Image Decoder</title>
   <meta name="description" content="A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Chapter 5 Gallery | GRID: Greenfield Image Decoder />
+  <meta property="og:title" content="Chapter 2 Installation | GRID: Greenfield Image Decoder />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://github.com/poissonfish/photo_grid" />
   <meta property="og:image" content="https://github.com/poissonfish/photo_gridmd/icon.png" />
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="poissonfish/photo_grid" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Gallery | GRID: Greenfield Image Decoder />
+  <meta name="twitter:title" content="Chapter 2 Installation | GRID: Greenfield Image Decoder />
   
   <meta name="twitter:description" content="A Python Package of Greenfield Image Decoder for Aerial High-Throughput Phenotyping" />
   <meta name="twitter:image" content="https://github.com/poissonfish/photo_gridmd/icon.png" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="interface-and-usage.html">
-
+<link rel="prev" href="index.html">
+<link rel="next" href="overview.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -99,57 +99,70 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="gallery" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Gallery</h1>
+<div id="installation" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Installation</h1>
+<div id="windows" class="section level2">
+<h2><span class="header-section-number">2.1</span> Windows</h2>
+<div id="install-anaconda" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Install Anaconda</h3>
+<ul>
+<li>It’s recommanded to install GRID under Anaconda envirnoemnt, download it <a href="https://www.anaconda.com/distribution/">here</a>0
 <p align="center">
 <p align="center">
-<img src = "res/demo1.png" width = 1200>
-</p>
+<img src = "res/Anaconda_python3.png" width = 500>
+</p></li>
+<li>Open the downloaded installer.
 <p align="center">
 <p align="center">
-<img src = "res/demo2.png" width = 1200>
-</p>
+<img src = "res/Anaconda_installation.png" width = 500>
+</p></li>
+</ul>
+</div>
+<div id="install-grid" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> Install GRID</h3>
+<ul>
+<li>Open Anaconda Prompt
 <p align="center">
 <p align="center">
-<img src = "res/demo3.png" width = 1200>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/demo4.png" width = 1200>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/demo5.png" width = 1200>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/demo6.png" width = 1200>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/demo7.png" width = 1200>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/demo8.png" width = 1200>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/demo9.png" width = 1200>
-</p>
-<p align="center">
-<p align="center">
-<img src = "res/demo10.png" width = 1200>
-</p>
-
+<img src = "res/Anaconda_Prompt.png" width = 500>
+</p></li>
+<li>In the prompt, run the following command to install Rasterio, which is required by GRID.</li>
+</ul>
+<pre><code>conda config --add channels conda-forge
+conda install rasterio </code></pre>
+<ul>
+<li>Use <a href="https://pip.pypa.io/en/stable/">pip</a> to install GRID</li>
+</ul>
+<pre><code>pip install photo_grid</code></pre>
+<ul>
+<li>Run GRID in Anaconda Prompt:</li>
+</ul>
+<pre><code>python -m grid</code></pre>
+</div>
+</div>
+<div id="os-x" class="section level2">
+<h2><span class="header-section-number">2.2</span> OS X</h2>
+<div id="install-grid-1" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Install GRID</h3>
+<ul>
+<li><p>Install <a href="https://www.python.org/downloads/">Python 3</a> and <a href="https://pip.pypa.io/en/stable/">pip</a> before installing GRID</p></li>
+<li>Use <a href="https://pip.pypa.io/en/stable/">pip</a> to install GRID</li>
+</ul>
+<pre><code>pip install photo_grid</code></pre>
+<ul>
+<li>Run GRID in Terminal:</li>
+</ul>
+<pre><code>python -m grid</code></pre>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="interface-and-usage.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="overview.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
