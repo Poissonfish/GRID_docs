@@ -22,7 +22,7 @@ cover-image: md/icon.png
 
 # Installation
 
-<p align="center"><p align="center"><img src = "res/GRID_logo.png" width = 700></p>
+<p align="center"><p align="center"><img src = "res/GRID_logo.png" width = 200></p>
 
 ![](https://img.shields.io/pypi/pyversions/photo_grid.svg?logo=python&logoColor=white)
 ![](https://img.shields.io/pypi/dm/photo_grid.svg?label=pypi%20downloads&logo=python&logoColor=white)
