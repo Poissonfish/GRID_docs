@@ -27,11 +27,15 @@ cover-image: md/icon.png
 
 ## Windows
 
+### Install Anaconda
+
 - It's recommanded to install GRID under Anaconda envirnoemnt, download it [here](https://www.anaconda.com/distribution/)0
 <p align="center"><p align="center"><img src = "res/Anaconda_python3.png" width = 500></p>
 
 - Open the downloaded installer.
 <p align="center"><p align="center"><img src = "res/Anaconda_installation.png" width = 500></p>
+
+### Install GRID
 
 - Open Anaconda Prompt
 <p align="center"><p align="center"><img src = "res/Anaconda_Prompt.png" width = 500></p>
@@ -39,7 +43,7 @@ cover-image: md/icon.png
 - In the prompt, run the following command to install Rasterio, which is required by GRID.
 ```
 conda config --add channels conda-forge
-conda install rasterio
+conda install rasterio 
 ```
 
 - Use [pip](https://pip.pypa.io/en/stable/) to install GRID
@@ -53,6 +57,8 @@ python -m grid
 ```
 
 ## OS X
+
+### Install GRID
 
 - Install [Python 3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) before installing GRID
 
